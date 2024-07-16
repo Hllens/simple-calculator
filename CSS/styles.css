@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    background-color: #f7d6e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc { 
+    width: 400px;
+    padding: 0.5em;
+    background-color: #d0f4de;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #bdb2ff;
+}
+
+#operations { 
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#previous-operation {
+    color: #ffadad;   
+}
+
+#current-operation {
+font-family: 700;
+font-size: 3em;
+color: #f08080;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #f1c0e8;
+    cursor: pointer;
+}
+
+#buttons-container .number {
+    background-color: #ffcfd2;
+}
+
+#buttons-container button:hover {
+    background-color: #bee9e8 ;
+    border-color: #1d1a31;
+}
+
+#buttons-container #icon-btn {
+    grid-column: span 2;
+    background-color: #ffee93;
+}
+
+#buttons-container #icon-btn:hover {
+    background-color: #62b6cb;
+}
